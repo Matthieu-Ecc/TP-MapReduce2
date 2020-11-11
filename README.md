@@ -1,1 +1,1 @@
-# TP-MapReduce2
+# hadoop-examples-mapreduce
