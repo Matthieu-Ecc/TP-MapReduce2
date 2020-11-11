@@ -15,7 +15,8 @@ public class AppDriver {
                     "A map/reduce program that display the discrict containing trees");
             programDriver.addClass("existing_species", existing_species.class,
                     "A map/reduce program that display the existing species");
-            
+            programDriver.addClass("nb_trees_species", nb_trees_species.class,
+                    "A map/reduce program that display the existing species");
             exitCode = programDriver.run(argv);
         } catch (Throwable throwable) {
             throwable.printStackTrace();
