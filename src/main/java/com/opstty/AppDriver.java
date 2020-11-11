@@ -12,7 +12,9 @@ public class AppDriver {
             programDriver.addClass("wordcount", WordCount.class,
                     "A map/reduce program that counts the words in the input files.");
             programDriver.addClass("District_containing_trees", District_containing_trees.class,
-                    "A map/reduce program that counts the words in the input files.");
+                    "A map/reduce program that display the discrict containing trees");
+            programDriver.addClass("existing_species", existing_species.class,
+                    "A map/reduce program that display the existing species");
             
             exitCode = programDriver.run(argv);
         } catch (Throwable throwable) {
