@@ -16,7 +16,12 @@ public class AppDriver {
             programDriver.addClass("existing_species", existing_species.class,
                     "A map/reduce program that display the existing species");
             programDriver.addClass("nb_trees_species", nb_trees_species.class,
-                    "A map/reduce program that display the existing species");
+                    "A map/reduce program that count the number of trees by species");
+            programDriver.addClass("max_height_trees_species", max_height_trees_species.class,
+                    "A map/reduce program that display trees max height by species");
+            programDriver.addClass("max_height_trees_species", sort_trees_small_to_height.class,
+                    "A map/reduce program that sort trees from smallest to heighest");
+            
             exitCode = programDriver.run(argv);
         } catch (Throwable throwable) {
             throwable.printStackTrace();
