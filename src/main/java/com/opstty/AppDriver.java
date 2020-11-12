@@ -19,8 +19,10 @@ public class AppDriver {
                     "A map/reduce program that count the number of trees by species");
             programDriver.addClass("max_height_trees_species", max_height_trees_species.class,
                     "A map/reduce program that display trees max height by species");
-            programDriver.addClass("max_height_trees_species", sort_trees_small_to_height.class,
+            programDriver.addClass("sort_trees_small_to_height", sort_trees_small_to_height.class,
                     "A map/reduce program that sort trees from smallest to heighest");
+            programDriver.addClass("district_oldest_tree", district_oldest_tree.class,
+                    "A map/reduce program that display the district wich contain the oldest tree");
             
             exitCode = programDriver.run(argv);
         } catch (Throwable throwable) {
